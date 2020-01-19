@@ -39,22 +39,6 @@ jobs:
           reporter: ${{ steps.reporter.outputs.value }}
           level: warning
 
-  yamllint:
-    name: runner / yamllint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: haya14busa/action-cond@v1
-        id: reporter
-        with:
-          cond: ${{ github.event_name == 'pull_request' }}
-          if_true: "github-pr-review"
-          if_false: "github-check"
-      - uses: reviewdog/action-yamllint@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: ${{ steps.reporter.outputs.value }}
-
   misspell:
     name: runner / misspell
     runs-on: ubuntu-latest
