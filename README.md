@@ -5,6 +5,7 @@
 [![reviewdog](https://github.com/haya14busa/action-docker-template/workflows/reviewdog/badge.svg)](https://github.com/haya14busa/action-docker-template/actions?query=workflow%3Areviewdog)
 [![release](https://github.com/haya14busa/action-docker-template/workflows/release/badge.svg)](https://github.com/haya14busa/action-docker-template/actions?query=workflow%3Arelease)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/haya14busa/action-docker-template?logo=github&sort=semver)](https://github.com/haya14busa/action-docker-template/releases)
+[![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
 This is a template repository for [creating a Docker container action](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-a-docker-container-action).
 with release automation and [reviewdog](https://github.com/reviewdog/reviewdog) (linters) integrations.
